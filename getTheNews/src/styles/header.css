@@ -1,26 +1,34 @@
-.header,
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Ubuntu:wght@500&display=swap");
+
+/* .header,
 .searchbar,
 .title,
 .button {
     border: 1px solid red;
-}
+} */
 
 .header {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #70cbff;
+  /* border: 1px solid grey; */
+  border-radius: 6px;
+}
+
+.title {
+  font-family: "Roboto Mono", monospace;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .searchBar {
-    width: 200px;
-    height: 30px;
-    margin-top: 22px;
+  width: 200px;
+  height: 30px;
+  margin-top: 22px;
 }
 
 .button {
-    width: 100px;
-    height: 30px;
-    margin-top: 24px;
+  width: 100px;
+  height: 30px;
+  margin-top: 24px;
 }
-
-
