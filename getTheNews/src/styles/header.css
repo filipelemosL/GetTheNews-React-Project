@@ -1,0 +1,26 @@
+.header,
+.searchbar,
+.title,
+.button {
+    border: 1px solid red;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.searchBar {
+    width: 200px;
+    height: 30px;
+    margin-top: 22px;
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    margin-top: 24px;
+}
+
+
