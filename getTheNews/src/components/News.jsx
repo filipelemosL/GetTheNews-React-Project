@@ -24,19 +24,34 @@ function News () {
     
         fetchNews();
       }, []);
-    return(
-        <>
-            <div className='mainNewsContainer'>
-                {news.map((article, index) => (
-                    <div className='article' key = {index}>
-                        <h3 className="articleTitle">{article.title}</h3>
-                        <p className='articleDescription'>{article.description}</p>
-                        <a className='articleUrl' href={article.url} target='_blank' rel='noopener noreferrer'>Read More</a>
-                    </div>
-                ))}
-            </div>
-        </>
-    );
-}
 
-export default News;
+      const renderColumns = () => {
+        const columns = [[], [], [], []]; // four colums created
+    
+        news.forEach((article, index) => {
+          columns[index % 4].push(article); // sort the news into the columns
+        });
+    
+        return columns.map((column, columnIndex) => (
+          <div className="column" key={columnIndex}>
+            {column.map((article, articleIndex) => (
+              <div className="article" key={articleIndex}>
+                <h3 className="articleTitle">{article.title}</h3>
+                <p className="articleDescription">{article.description}</p>
+                <a className="articleUrl" href={article.url} target="_blank" rel="noopener noreferrer">
+                  Read More
+                </a>
+              </div>
+            ))}
+          </div>
+        ));
+      };
+    
+      return (
+        <div className="mainNewsContainer">
+          {renderColumns()}
+        </div>
+      );
+    }
+    
+    export default News;

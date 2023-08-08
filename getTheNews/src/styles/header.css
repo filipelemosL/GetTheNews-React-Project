@@ -1,14 +1,16 @@
-.header,
+/* .header,
 .searchbar,
 .title,
 .button {
     border: 1px solid red;
-}
+} */
 
 .header {
     display: flex;
     justify-content: center;
     gap: 20px;
+    border: 1px solid grey;
+    
 }
 
 .searchBar {

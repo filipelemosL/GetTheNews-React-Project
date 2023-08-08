@@ -1,16 +1,30 @@
-.mainNewsContainer,
+/* .mainNewsContainer,
 .artcleTitle,
 .articleDescription,
 .articleUrl,
 .article {
     border: 1px solid red;
+} */
+
+.mainNewsContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: flex-start;
 }
 
 .article {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-direction: column;
     height: fit-content;
     width: 250px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid grey;
 }
+
+
