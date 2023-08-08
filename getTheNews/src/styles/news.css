@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Ubuntu:wght@300&display=swap");
+
 /* .mainNewsContainer,
 .artcleTitle,
 .articleDescription,
@@ -6,25 +9,35 @@
     border: 1px solid red;
 } */
 
-.mainNewsContainer{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
-    align-items: flex-start;
+.mainNewsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  align-items: flex-start;
 }
 
 .article {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-direction: column;
-    height: fit-content;
-    width: 250px;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  height: fit-content;
+  width: 210px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  /* border: 1px solid grey; */
 }
 
+.articleTitle {
+  font-family: "Roboto Mono", monospace;
+  font-family: "Ubuntu", sans-serif;
+}
 
+.articleDescription,
+.articleUrl {
+  font-family: "Roboto Mono", monospace;
+  font-family: "Ubuntu", sans-serif;
+}
