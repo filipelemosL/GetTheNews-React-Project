@@ -28,11 +28,11 @@ function News() {
 
   const getRandomColor = (() => {
     const colors = [
-      { color: "#2E4052", text: "white" },
-      { color: "#D7FFAB", text: "black" },
-      { color: "#FCFF6C", text: "black" },
-      { color: "#EE6C4D", text: "white" },
-      { color: "#3E92CC", text: "white" },
+      { color: "#5C6F68", text: "white" },
+      { color: "#8AA39B", text: "white" },
+      { color: "#95D9C3", text: "black" },
+      { color: "#A4F9C8", text: "black" },
+      { color: "#A7FFF6", text: "black" },
     ];
 
     let lastColorIndex = -1;
